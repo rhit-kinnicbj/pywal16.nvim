@@ -108,14 +108,14 @@ M.highlights_base = function(colors)
 
 
     -- barbar
-		TabLineSel = {bg=colors.color3, fg=colors.foreground} )
-		BufferCurrent = {bg=colors.color3, fg=colors.foregound} )
-		BufferCurrentMod = {bg=colors.color3, fg=colors.foregound} )
-		BufferCurrentModBtn = {bg=colors.color3, fg=colors.foreground} )
-		BufferCurrentIndex = {bg=colors.color3, fg=colors.foreground} )
-		BufferCurrentSign = {bg=colors.background, fg=colors.color3} )
-		BufferCurrentIcon = {bg=colors.background} )
-		BufferDefaultVisibleSign = {bg=colors.background, fg=colors.background} )
+		TabLineSel = {bg=colors.color3, fg=colors.foreground} ),
+		BufferCurrent = {bg=colors.color3, fg=colors.foregound} ),
+		BufferCurrentMod = {bg=colors.color3, fg=colors.foregound} ),
+		BufferCurrentModBtn = {bg=colors.color3, fg=colors.foreground} ),
+		BufferCurrentIndex = {bg=colors.color3, fg=colors.foreground} ),
+		BufferCurrentSign = {bg=colors.background, fg=colors.color3} ),
+		BufferCurrentIcon = {bg=colors.background} ),
+		BufferDefaultVisibleSign = {bg=colors.background, fg=colors.background} ),
 
     -- BetterWhitespace
     ExtraWhitespace = { fg = colors.color8, bg = colors.background },
