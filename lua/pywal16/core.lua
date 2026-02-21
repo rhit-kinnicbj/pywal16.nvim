@@ -9,7 +9,7 @@ function LightenDarkenColor(col, amt)
   local r = math.floor(num / 0x10000) + amt
   local g = (math.floor(num / 0x100) % 0x100) + amt
   local b = (num % 0x100) + amt
-  return string.format("%#x", clamp(r) * 0x10000 + clamp(g) * 0x100 + clamp(b))
+  return string.format("#", clamp(r) * 0x10000 + clamp(g) * 0x100 + clamp(b))
 end
 
 function M.get_colors()
