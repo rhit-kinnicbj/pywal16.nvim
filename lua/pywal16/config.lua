@@ -58,7 +58,6 @@ M.highlights_base = function(colors)
     NotifyBackground = { bg = colors.background },
     Number = { fg = colors.color5 },
     Operator = { fg = colors.color6 },
-    Pmenu = { fg = colors.foreground, bg = colors.transparent },
     PmenuSbar = { bg = colors.transparent },
     PmenuSel = { fg = colors.transparent, bg = colors.color0 },
     PmenuThumb = { bg = colors.color2 },
@@ -106,6 +105,9 @@ M.highlights_base = function(colors)
     healthWarning = { fg = colors.color5 },
     lCursor = { fg = colors.foreground, bg = colors.cursor },
 
+    --Misc Changes
+    Pmenu = { bg=colors.color3 },
+    NormalFloat = { bg=colors.color3 },
 
     -- barbar
 		TabLineSel = {bg=colors.color3, fg=colors.foreground},
@@ -243,6 +245,7 @@ M.highlights_base = function(colors)
     NvimTreeSpecialFile = { fg = colors.color6 },
     NvimTreeStatusLineNC = { bg = colors.transparent, fg = colors.transparent },
     NvimTreeSymlink = { fg = colors.color7 },
+    NvimTreeCursorLine = { bg = colors.color1, fg = colors.foreground },
 
     -- Telescope
     TelescopeBorder = { fg = colors.color5, bg = colors.transparent },
