@@ -59,7 +59,7 @@ function M.get_colors()
     transparent = "NONE",
     background = vim.g.background,
     foreground = vim.g.foreground,
-    backgroundFocus = LightenDarkenColor(vim.g.background, 10),
+    backgroundFocus = LightenDarkenColor(string.sub(vim.g.background,2,-1), 10),
     cursor = vim.g.cursor,
     color0 = vim.g.color0,
     color1 = vim.g.color1,
