@@ -105,10 +105,6 @@ M.highlights_base = function(colors)
     healthWarning = { fg = colors.color5 },
     lCursor = { fg = colors.foreground, bg = colors.cursor },
 
-    --Misc Changes
-    Pmenu = { bg=colors.color3 },
-    NormalFloat = { bg=colors.color3 },
-
     -- barbar
 		TabLineSel = {bg=colors.color3, fg=colors.foreground},
 		BufferCurrent = {bg=colors.color3, fg=colors.foregound},
