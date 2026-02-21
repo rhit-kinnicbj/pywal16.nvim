@@ -1,5 +1,17 @@
 local M = {}
 
+-- From https://stackoverflow.com/questions/72424838/programmatically-lighten-or-darken-a-hex-color-in-lua-nvim-highlight-colors
+local function clamp(component)
+  return math.min(math.max(component, 0), 255)
+end
+function LightenDarkenColor(col, amt)
+  local num = tonumber(col, 16)
+  local r = math.floor(num / 0x10000) + amt
+  local g = (math.floor(num / 0x100) % 0x100) + amt
+  local b = (num % 0x100) + amt
+  return string.format("%#x", clamp(r) * 0x10000 + clamp(g) * 0x100 + clamp(b))
+end
+
 function M.get_colors()
   local colors_paths = {}
 
@@ -39,10 +51,15 @@ function M.get_colors()
     vim.notify("couldn't read wal colors, file does not exist")
   end
 
+
+
+
+
   return {
     transparent = "NONE",
     background = vim.g.background,
     foreground = vim.g.foreground,
+    backgroundFocus = LightenDarkenColor(vim.g.background, 10),
     cursor = vim.g.cursor,
     color0 = vim.g.color0,
     color1 = vim.g.color1,

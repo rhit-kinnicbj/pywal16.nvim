@@ -19,8 +19,8 @@ M.highlights_base = function(colors)
     Cursor = { fg = colors.foreground, bg = colors.cursor },
     CursorColumn = { bg = colors.transparent },
     CursorIM = { fg = colors.foreground, bg = colors.cursor },
-    CursorLine = { bg = colors.transparent },
-    CursorLineNr = { fg = colors.color1 },
+    CursorLine = { bg = colors.backgroundFocus },
+    CursorLineNr = { bg = colors.backgroundFocus, fg = colors.color1 },
     Debug = { fg = colors.color11 },
     Define = { fg = colors.color6 },
     Delimiter = { fg = colors.foreground },
@@ -59,7 +59,7 @@ M.highlights_base = function(colors)
     Number = { fg = colors.color5 },
     Operator = { fg = colors.color6 },
     PmenuSbar = { bg = colors.transparent },
-    PmenuSel = { fg = colors.transparent, bg = colors.color0 },
+    PmenuSel = { fg = colors.transparent, bg = colors.backgroundFocus },
     PmenuThumb = { bg = colors.color2 },
     PreCondit = { fg = colors.color6 },
     PreProc = { fg = colors.color6 },
@@ -241,7 +241,7 @@ M.highlights_base = function(colors)
     NvimTreeSpecialFile = { fg = colors.color6 },
     NvimTreeStatusLineNC = { bg = colors.transparent, fg = colors.transparent },
     NvimTreeSymlink = { fg = colors.color7 },
-    NvimTreeCursorLine = { bg = colors.color1, fg = colors.foreground },
+    NvimTreeCursorLine = { bg = colors.backgroundFocus, },
 
     -- Telescope
     TelescopeBorder = { fg = colors.color5, bg = colors.transparent },
